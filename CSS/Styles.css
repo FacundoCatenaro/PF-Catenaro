@@ -1,0 +1,445 @@
+
+
+/* reset */ 
+
+@font-face {
+    font-family:"PTSerif-Bold.ttf" ;
+    src: url(../Fonts/PTSerif-Bold.ttf);
+}
+
+*{
+  margin:0;
+  padding: 0%;
+}
+
+/* Estilo Mobile */
+
+@media (max-width: 480px) {
+
+
+    .logo__container{
+            display: grid;
+            grid-area: 
+            "escudo"
+            "nombre";
+            margin-left: 2%;
+    }
+    
+    .nav_container{
+        margin-left: 0%;
+    }
+
+
+    .video_1{
+        display: flex;
+        width: 40%;
+         background-color: black;
+    }
+
+    }
+     .video_1 {
+        height: 100px;
+     }
+
+
+     .new_container{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        flex-direction: column;
+        }
+     .conteiner{
+        display: grid;
+        flex-basis: 28%;
+     }
+
+     .new_container1{
+        flex-direction: column;
+     }
+
+     .conteiner1{
+        width: 10%;
+        flex-basis: 25%;
+     }
+
+
+     .hist_container{
+        display: flex;
+        justify-content: space-around;
+     }
+
+    
+     .patro_container{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+     }
+    
+
+
+/*Cierre estilo Mobile */
+
+
+/*Navegador */
+
+
+.escudo {
+    width: 150px;
+    margin-left: 5%;
+}
+
+.nav{
+   background-color: white;
+   width: 100%;
+   height: 70px;
+}
+
+.nav .logo__container img {
+   width: 1px; 
+   margin: auto;
+   background-color:black;
+}
+
+.logo__container span{
+
+    font-size: 40px;
+    margin-left: 1%;
+}
+body
+
+
+.nav_container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    height: 35px; 
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Pagina 1 */ 
+
+.video_1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    border: solid px black;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.titulo{
+    display: flex;
+    margin: 20px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    justify-content: center;
+}
+
+.new_container {
+    display: flex;
+    border-radius: 1px;
+    background: rgb(255, 255, 255);
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+    background-image: url(/Img/estadio.jpg);
+    background-position: 200%;
+    background-size: cover;
+}
+
+.new_container .conteiner {
+grid-area: left;
+border: 10px solid;
+background-color: rgb(207, 207, 207);
+color: black;
+width: 30%;
+height: 90%;
+}
+
+
+.new_container .conteiner img {
+    width: 100%;
+}
+
+
+.titulo1{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin: 20px;
+    color: white;
+    background-color:black;
+    text-align: center;
+}
+
+.new_container1 {
+    display: flex;
+    border-radius: 1px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 450px;
+    background-image: url(/Img/estadio.jpg);
+    background-position: 200%;
+    background-size: cover
+}
+
+.new_container1 .conteiner1 {
+    border: 10px solid;
+    background-color: rgb(207, 207, 207);
+    color: rgb(0, 0, 0);
+    width: 30%;
+    height: 90%;
+    }
+    
+    .new_container1 .conteiner1 img {
+        width: 100%;
+    }
+
+.titulo2{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+/* Pagina 2 */
+
+.titulo4{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.historia img{
+    width: 180px;
+}
+
+
+.hist_container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 10px;
+    column-gap: 40px;
+    row-gap: 35px;
+}
+
+.hist_container{
+    background-image: url(/Img/estadio.jpg);
+    background-position: 100%;
+    background-size: cover;
+}
+
+.hist_container .container2{
+    padding: 10px;
+    margin: 10px;
+    border: solid 5px black;
+    border-radius: 10px;
+    background: rgb(207, 207, 207);
+    width: 40%;
+    margin-left: 20%;
+}
+
+.hist_container .container2 img{
+width: 100%;
+}
+
+
+
+
+
+/* Pagina 3 */
+
+.titulo5{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.poli_container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 10px;
+    column-gap: 40px;
+    row-gap: 35px;
+}
+
+.poli_container {
+    background-image: url(/Img/estadio.jpg);
+    background-position: 200%;
+    background-size: cover;
+}
+
+.poli_container .container3{
+    
+    border: 10px solid;
+    background-color: rgb(207, 207, 207);
+    color: black;
+    width: 70%;
+    margin-left: 10%;
+}
+
+.poli_container .container3 img{
+    width: 100%;
+    height: 90%;
+}
+
+.portada_container img{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+}
+
+
+
+
+/* Pagina 4 */
+
+.titulo6{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.socio_container{
+    display: grid;
+    grid-template-columns: repeat(2, 42%);
+    margin: 10px;
+    border: solid 7px black;
+    background: rgb(153, 152, 152);
+    color: rgb(255, 255, 255);
+    background-image: url(/Img/sociossssss.jfif);
+    background-position: 100%;
+    background-size:cover;
+    width: 100%;
+}
+
+.registro{
+    display: flex;
+    margin: 20%;
+    margin-top: 15%; 
+    height: 27%;
+    width: 60%;
+}
+
+.pago{
+
+    color: rgb(255, 255, 255);
+    margin: 10%;
+    margin-top: 10%;
+    width: 60%;
+    margin-right: 10%;
+}
+
+
+
+
+/* Pagina 5 */
+
+.titulo7{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: 2%;
+}
+
+.portada2_container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: black;
+}
+
+.tienda {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    row-gap: 15px;
+}
+
+.tienda{
+    background-image: url(/Img/cancha22.jpg);
+    background-position: 300%;
+    background-size: cover;
+}
+
+.tienda .conteiner4 {
+    margin-left: 10%;
+    border: 10px solid;
+    background-color:white;
+    color: black;
+    width: 55%;
+}
+
+
+.tienda .conteiner4 img{
+    width: 60%;
+}
+
+
+
+
+/*Patrocinadores */
+
+
+.patro_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    border: solid 5px black;
+    border-radius: 10px;
+    background: white;
+    height: 160px;
+}
+.patro_container .patro1_container{
+    border: 10px solid;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: 180px;
+    height: 140px
+    }
+
+.patro_container .patro1_container img{
+        width: 180px;  
+        height: 120px;
+    }
+
+   
+
+
+
+/*Footer*/
+
+.footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    height: 150px;
+}
