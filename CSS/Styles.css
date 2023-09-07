@@ -43,12 +43,10 @@
 
 
      .new_container{
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
         flex-direction: column;
         }
+
      .conteiner{
-        display: grid;
         flex-basis: 28%;
      }
 
@@ -158,6 +156,7 @@ a {
     background-image: url(../Img/estadio.jpg);
     background-position: 200%;
     background-size: cover;
+    flex-direction: column;
 }
 
 .new_container .conteiner {
