@@ -12,70 +12,6 @@
   padding: 0%;
 }
 
-/* Estilo Mobile */
-
-@media (max-width: 480px) {
-
-
-    .logo__container{
-            display: grid;
-            grid-area: 
-            "escudo"
-            "nombre";
-            margin-left: 2%;
-    }
-    
-    .nav_container{
-        margin-left: 0%;
-    }
-
-
-    .video_1{
-        display: flex;
-        width: 40%;
-         background-color: black;
-    }
-
-    }
-     .video_1 {
-        height: 100px;
-     }
-
-
-     .new_container{
-        flex-direction: column;
-        }
-
-     .conteiner{
-        flex-basis: 28%;
-     }
-
-     .new_container1{
-        flex-direction: column;
-     }
-
-     .conteiner1{
-        width: 10%;
-        flex-basis: 25%;
-     }
-
-
-     .hist_container{
-        display: flex;
-        justify-content: space-around;
-     }
-
-    
-     .patro_container{
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, 50%);
-     }
-    
-
-
-/*Cierre estilo Mobile */
-
 
 /*Navegador */
 
@@ -129,10 +65,7 @@ a {
     justify-content: center;
     background-color: rgb(0, 0, 0);
     margin: auto;
-    border: solid px black;
     width: 100%;
-    height: 20%;
-    justify-content: center;
     margin-top: 1%;
 }
 
@@ -310,6 +243,7 @@ width: 100%;
      display: flex;
      justify-content: center;
      width: 100%;
+     height: 500px;
 }
 
 
@@ -407,9 +341,9 @@ width: 100%;
 
 
 .patro_container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
+    display: flex;
+    border-radius: 1px;
+    flex-flow: row wrap;
     justify-content: space-around;
     padding: 10px;
     margin: 10px;
@@ -419,6 +353,7 @@ width: 100%;
     height: 160px;
 }
 .patro_container .patro1_container{
+    
     border: 10px solid;
     background-color: white;
     color: rgb(0, 0, 0);
@@ -433,8 +368,6 @@ width: 100%;
 
    
 
-
-
 /*Footer*/
 
 .footer {
@@ -442,3 +375,67 @@ width: 100%;
     background-color: rgb(0, 0, 0);
     height: 150px;
 }
+
+/* Estilo Mobile */
+
+@media (max-width: 480px) {
+
+
+    .logo__container{
+            display: grid;
+            grid-area: 
+            "escudo"
+            "nombre";
+            margin-left: 2%;
+    }
+    
+    .nav_container{
+        margin-left: 0%;
+    }
+
+
+    .video_1{
+        display: flex;
+        width: 40%;
+         background-color: black;
+    }
+
+    }
+     .video_1 {
+        height: 100px;
+     }
+
+
+     .new_container{
+        flex-direction: column;
+        }
+
+     .conteiner{
+        flex-basis: 28%;
+     }
+
+     .new_container1{
+        flex-direction: column;
+     }
+
+     .conteiner1{
+        width: 10%;
+        flex-basis: 25%;
+     }
+
+
+     .hist_container{
+        display: flex;
+        justify-content: space-around;
+     }
+
+    
+     .patro_container{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+     }
+    
+
+
+/*Cierre estilo Mobile */
