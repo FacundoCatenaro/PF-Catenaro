@@ -331,6 +331,45 @@ width: 100%;
     width: 30%;
 }
 
+/*Patrocinadores*/
+
+.patrocinador{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    background-color:white;
+    flex-wrap: wrap;
+    width: 98%;
+    height: auto;
+    margin: 10px;
+    column-gap: 40px;
+    row-gap: 35px;
+    border: 10px solid ;
+    background-image: url(../Img/cancha22.jpg);
+    background-position: 300%;
+    background-size: cover;
+    margin-bottom: 1%;
+}
+
+
+
+.patrocinador .patro{
+    display: flex;
+    justify-content: center;
+    border: 10px solid;
+    background-color:white;
+    color: black;
+    width: auto;
+    width: 70%;
+    margin: 1%;
+}
+
+.patrocinador .patro img{
+    width: 60%;
+    height: auto;
+}
+
+
 
 /*Footer*/
 
@@ -377,10 +416,13 @@ width: 100%;
      .new_container{
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
         width: 100%;
      }
 
      .new_container .conteiner{
+        flex-wrap: nowrap;
         width: 93%;
         margin-bottom: 3%;
         margin-left: 1%;
@@ -388,11 +430,15 @@ width: 100%;
      
 
      .new_container1{
-        display: inline;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
         width: 100%;
      }
 
      .new_container1 .conteiner1{
+        flex-wrap: nowrap;
         width: 93%;
         margin-bottom: 3%;
         margin-left: 1%;
@@ -400,8 +446,11 @@ width: 100%;
 
 
      .hist_container{
-        display: inline;
-        width: 10%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        width: 100%;
      }
 
      .hist_container .container2{
@@ -443,8 +492,11 @@ width: 100%;
      }
    
     .poli_container{
-            display: inline;
-            width: 10%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        width: 100%;
     }
     
      .container3{
@@ -452,8 +504,11 @@ width: 100%;
      }
 
      .tienda{
-        display: inline;
-        width: 10%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        width: 100%;
      }
 
     
@@ -463,6 +518,47 @@ width: 100%;
      .conteiner4{
         margin-bottom: 3%;
      }
+
+
+.patrocinador{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    flex-wrap: wrap;
+    width: 93%;
+    height: auto;
+    margin: 10px;
+    column-gap: 40px;
+    row-gap: 35px;
+    border: 10px solid ;
+    background-image: url(../Img/cancha22.jpg);
+    background-position: 300%;
+    background-size: cover;
+    margin-bottom: 1%;
+}
+
+
+
+.patrocinador .patro{
+    display: flex;
+    justify-content: center;
+    border: 10px solid;
+    background-color:white;
+    color: black;
+    width: auto;
+    width: 70%;
+    margin: 5%;
+    margin-left: 12%;
+}
+
+.patrocinador .patro img{
+    width: 60%;
+    height: auto;
+}
+
+
+
+
 
     .footer{
         width: 100%;
