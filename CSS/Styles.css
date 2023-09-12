@@ -66,7 +66,7 @@ a {
     margin: auto;
     margin-top: 1%;
     width: 100%;
-    height: 200%;
+    height: 100%;
 }
 
 .titulo{
@@ -76,7 +76,6 @@ a {
     color: white;
     background-color: black;
     justify-content: center;
-    margin-top: 17%;
 }
 
 .new_container {
@@ -104,7 +103,7 @@ width: 30%;
 
 
 .new_container .conteiner img {
-    width: 30%;
+    width: 100%;
 }
 
 
@@ -139,7 +138,7 @@ width: 30%;
     }
     
     .new_container1 .conteiner1 img {
-        width: 30%;
+        width: 100%;
     }
 
 .titulo2{
@@ -166,9 +165,9 @@ width: 30%;
 
 .hist_container{
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 25%);
     margin: 1%;
-    
+    justify-content: center;
 }
 
 .hist_container{
@@ -185,7 +184,7 @@ width: 30%;
     border: solid 5px black;
     border-radius: 10px;
     background: rgb(207, 207, 207);
-    width: 100%;
+    width: 90%;
 }
 
 .hist_container .container2 img{
@@ -367,19 +366,21 @@ width: 100%;
          background-color: black;
     }
 
-    }
+
      .video_1 {
         height: 250px;
      }
 
-
+     .titulo{
+        margin-top: 20%;
+     }
      .new_container{
-        display: inline;
+        display: flex;
+        flex-direction: column;
         width: 100%;
      }
 
      .new_container .conteiner{
-        flex-direction: column;
         width: 93%;
         margin-bottom: 3%;
         margin-left: 1%;
@@ -454,14 +455,7 @@ width: 100%;
         display: inline;
         width: 10%;
      }
-     .tienda{
-      background-image: url(../Img/cancha22.jpg);
-      background-position:100%;
-      background-size: cover;
-      margin-bottom: 1%;
-      width: 94%;
-     }
-    
+
     
     .portada2_container img{
        width: 100%;
@@ -473,4 +467,5 @@ width: 100%;
     .footer{
         width: 100%;
     }
+}
 /*Cierre estilo Mobile */
