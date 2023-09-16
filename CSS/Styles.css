@@ -105,6 +105,9 @@ color: black;
 width: 30%;
 }
 
+.conteiner:hover {
+    transform: scale(1.03);
+}   
 
 .new_container .conteiner img {
     width: 100%;
@@ -145,7 +148,11 @@ width: 30%;
     width: 30%;
     height: 90%;
     }
-    
+
+.conteiner1:hover {
+          transform: scale(1.03);
+}   
+
     .new_container1 .conteiner1 img {
         width: 100%;
         opacity: .85;
@@ -185,12 +192,21 @@ width: 30%;
 }
 
 .hist_container{
-    background-image: url(../Img/estadio.jpg);
     background-position: 100%;
     background-size: cover;
     margin-bottom: 1%;
     height: 900px;
+    animation: galeria 20s infinite;
 }
+
+@keyframes galeria{
+    0%, 100% {
+      background-image: url(../Img/estadio.jpg);
+    }
+      50%{
+         background-image: url(../Img/cancha22.jpg);
+      }
+    }   
 
 .hist_container .container2{
     padding: 10px;
@@ -200,6 +216,11 @@ width: 30%;
     background: rgb(207, 207, 207);
     width: 90%;
 }
+
+.container2:hover {
+    transform: scale(1.03);
+}   
+
 
 .hist_container .container2 img{
 width: 100%;
@@ -281,9 +302,9 @@ opacity: .85;
 }
 
 .poli_container {
-    background-image: url(../Img/estadio.jpg);
     background-position: 200%;
     background-size: cover;
+    animation: galeria 20s infinite;
 }
 
 .poli_container .container3{
@@ -294,6 +315,11 @@ opacity: .85;
     width: 70%;
     margin-left: 10%;
 }
+
+.container3:hover {
+    transform: scale(1.03);
+}   
+
 
 .poli_container .container3 img{
     width: 100%;
@@ -311,8 +337,16 @@ opacity: .85;
      justify-content: center;
      width: 100%;
      height: 500px;
-}
+    }
 
+@keyframes galeria{
+     0%, 100% {
+       background-image: url(../Img/estadio.jpg);
+     }
+       50%{
+          background-image: url(../Img/cancha22.jpg);
+       }
+     }   
 
 
 /* Pagina 5 */
@@ -354,6 +388,10 @@ opacity: .85;
     width: 55%;
 }
 
+.conteiner4:hover {
+    transform: scale(1.03);
+}   
+
 .tienda .conteiner4 img{
     width: 30%;
 }
@@ -391,6 +429,9 @@ opacity: .85;
     margin: 1%;
 }
 
+.patro:hover {
+    transform: scale(1.03);
+}   
 .patrocinador .patro img{
     width: 60%;
     height: auto;
