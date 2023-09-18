@@ -33,8 +33,7 @@
    background-color:black;
 }
 
-.logo__container span{
-
+.nombre{
     font-size: 40px;
     margin-left: 1%;
 }
@@ -48,16 +47,18 @@
     background-color: black;
     height: 35px; 
 }
+
 li{
     list-style: none;
-}
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
 }
 
 a:active {
     font-weight: 800;
+}
+
+.nav_color {
+    color: white;
+    text-decoration: none;
 }
 
 
