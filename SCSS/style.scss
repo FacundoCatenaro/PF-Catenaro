@@ -17,8 +17,6 @@ $alto:100%;
 $dflex:flex;
 $galeria:url(../Img/estadio.jpg);
 $galeria1:url(../Img/cancha22.jpg);
-
-
 /*Navegador */
 .escudo {
     width: 150px;
@@ -60,10 +58,11 @@ a:active {
     font-weight: 800;
 }
 
-.nav_color {
-    $navcolor:"color";
+li a {
     text-decoration: none;
-}
+    list-style: none;
+    color: white;
+    }
 
 @if($navcolor=="color") {
     color: white;
