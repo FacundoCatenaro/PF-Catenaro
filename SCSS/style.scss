@@ -12,6 +12,9 @@
   padding: 0%;
 }
 
+$ancho:100%;
+$alto:100%;
+$dflex:flex;
 
 /*Navegador */
 
@@ -23,7 +26,7 @@
 
 .nav{
    background-color: white;
-   width: 100%;
+   width: $ancho;
    height: 70px;
 }
 
@@ -40,7 +43,7 @@
 
 
 .nav_container {
-    display: flex;
+    display: $dflex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
@@ -65,17 +68,17 @@ a:active {
 /*Pagina 1 */ 
 
 .video_1 video{
-    display: flex;
+    display: $dflex;
     justify-content: center;
     background-color: rgb(0, 0, 0);
     margin: auto;
     margin-top: 1%;
-    width: 100%;
-    height: 100%;
+    width: $ancho;
+    height: $alto;
 }
 
 .titulo{
-    display: flex;
+    display: $dflex;
     margin: 20px;
     height: 40px;
     color: white;
@@ -84,12 +87,12 @@ a:active {
 }
 
 .new_container {
-    display: flex;
+    display: $dflex;
     justify-content: space-around;
     flex-flow: row wrap;
     border-radius: 1px;
     background: rgb(255, 255, 255);
-    width: 100%;
+    width: $ancho;
     height: 500px;
 }
 
@@ -111,7 +114,7 @@ width: 30%;
 }   
 
 .new_container .conteiner img {
-    width: 100%;
+    width: $ancho;
     opacity: .85;
 }
 
@@ -121,7 +124,7 @@ width: 30%;
 
 
 .titulo1{
-    display: flex;
+    display: $dflex;
     justify-content: center;
     height: 40px;
     margin: 20px;
@@ -131,11 +134,11 @@ width: 30%;
 }
 
 .new_container1 {
-    display: flex;
+    display: $dflex;
     border-radius: 1px;
     flex-flow: row wrap;
     justify-content: space-around;
-    width: 100%;
+    width: $ancho;
     height: 450px;
     background-image: url(../Img/estadio.jpg);
     background-position: 200%;
@@ -147,7 +150,7 @@ width: 30%;
     background-color: rgb(207, 207, 207);
     color: rgb(0, 0, 0);
     width: 30%;
-    height: 100%;
+    height: $alto;
     }
 
 .conteiner1:hover {
@@ -155,7 +158,7 @@ width: 30%;
 }   
 
     .new_container1 .conteiner1 img {
-        width: 100%;
+        width: $ancho;
         opacity: .85;
     }
 
@@ -164,7 +167,7 @@ width: 30%;
     }
 
 .titulo2{
-    display: flex;
+    display: $dflex;
     justify-content: center;
     height: 40px;
     margin: 20px;
@@ -176,9 +179,8 @@ width: 30%;
 
 /* Pagina 2 */
 
-
 .titulo4{
-    display: flex;
+    display: $dflex;
     justify-content: center;
     height: 30px;
     margin: 20px;
@@ -225,7 +227,7 @@ width: 30%;
 
 
 .hist_container .container2 img{
-width: 100%;
+width: $ancho;
 opacity: .85;
 }
 
@@ -238,7 +240,7 @@ opacity: .85;
 /* Pagina 3 */
 
 .titulo6{
-    display: flex;
+    display: $dflex;
     justify-content: center;
     height: 30px;
     margin: 20px;
@@ -256,11 +258,11 @@ opacity: .85;
     background-image: url(../Img/sociossssss.jfif);
     background-position: 100%;
     background-size:cover;
-    width: 100%;
+    width: $ancho;
 }
 
 .registro{
-    display: flex;
+    display: $dflex;
     margin: 20%;
     margin-top: 15%; 
     height: 27%;
@@ -287,7 +289,7 @@ opacity: .85;
 /* Pagina 4 */
 
 .titulo5{
-    display: flex;
+    display: $dflex;
     justify-content: center;
     height: 30px;
     margin: 20px;
@@ -324,7 +326,7 @@ opacity: .85;
 
 
 .poli_container .container3 img{
-    width: 100%;
+    width: $ancho;
     height: 90%;
     opacity: .85;
 }
@@ -335,9 +337,9 @@ opacity: .85;
 
 
 .portada_container img{
-     display: flex;
+     display: $dflex;
      justify-content: center;
-     width: 100%;
+     width: $ancho;
      height: 500px;
     }
 
@@ -354,7 +356,7 @@ opacity: .85;
 /* Pagina 5 */
 
 .titulo7{
-    display: flex;
+    display: $dflex;
     justify-content: center;
     height: 30px;
     margin: 20px;
@@ -363,7 +365,7 @@ opacity: .85;
 }
 
 .portada2_container{
-    display: flex;
+    display: $dflex;
     justify-content: center;
     width: 100%;
     background: black;
@@ -421,7 +423,7 @@ opacity: .85;
 
 
 .patrocinador .patro{
-    display: flex;
+    display: $dflex;
     justify-content: center;
     border: 10px solid;
     background-color:white;
@@ -471,8 +473,8 @@ opacity: .85;
 
 
     .video_1 video {
-        width: 100%;
-        height: 130%;
+        width: $ancho;
+        height: $alto;
          background-color: black;
     }
 
@@ -485,11 +487,11 @@ opacity: .85;
         margin-top: 20%;
      }
      .new_container{
-        display: flex;
+        display: $dflex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-        width: 100%;
+        width: $ancho;
      }
 
      .new_container .conteiner{
@@ -501,11 +503,11 @@ opacity: .85;
      
 
      .new_container1{
-        display: flex;
+        display: $dflex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-        width: 100%;
+        width: $ancho;
      }
 
      .new_container1 .conteiner1{
@@ -517,11 +519,11 @@ opacity: .85;
 
 
      .hist_container{
-        display: flex;
+        display: $dflex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-        width: 100%;
+        width: $ancho;
      }
 
      .hist_container .container2{
@@ -529,7 +531,7 @@ opacity: .85;
      }
      
     .hist_container .container2 img{
-        width: 100%;
+        width: $ancho;
     }
     
     .portada_container img{
@@ -538,7 +540,7 @@ opacity: .85;
 
 
      .socio_container{
-        display: flex;
+        display: $dflex;
         flex-direction: column;       
      }
 
@@ -563,11 +565,11 @@ opacity: .85;
      }
    
     .poli_container{
-        display: flex;
+        display: $dflex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-        width: 100%;
+        width: $ancho;
     }
     
      .container3{
@@ -575,16 +577,16 @@ opacity: .85;
      }
 
      .tienda{
-        display: flex;
+        display: $dflex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-        width: 100%;
+        width: $ancho;
      }
 
     
     .portada2_container img{
-       width: 100%;
+       width: $ancho;
     }
      .conteiner4{
         margin-bottom: 3%;
@@ -592,7 +594,7 @@ opacity: .85;
 
 
 .patrocinador{
-    display: flex;
+    display: $dflex;
     flex-direction: column;
     background-color:white;
     flex-wrap: wrap;
@@ -611,7 +613,7 @@ opacity: .85;
 
 
 .patrocinador .patro{
-    display: flex;
+    display: $dflex;
     justify-content: center;
     border: 10px solid;
     background-color:white;
@@ -629,7 +631,7 @@ opacity: .85;
 
 
  .footer{
-        width: 100%;
+        width: $ancho;
     }
 }
 /*Cierre estilo Mobile */
