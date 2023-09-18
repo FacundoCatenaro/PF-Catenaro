@@ -11,14 +11,15 @@
   margin:0;
   padding: 0%;
 }
-
+/*Sass */
 $ancho:100%;
 $alto:100%;
 $dflex:flex;
+$galeria:url(../Img/estadio.jpg);
+$galeria1:url(../Img/cancha22.jpg);
+
 
 /*Navegador */
-
-
 .escudo {
     width: 150px;
     margin-left: 5%;
@@ -60,8 +61,12 @@ a:active {
 }
 
 .nav_color {
-    color: white;
+    $navcolor:"color";
     text-decoration: none;
+}
+
+@if($navcolor=="color") {
+    color: white;
 }
 
 
@@ -97,9 +102,13 @@ a:active {
 }
 
 .new_container{
-    background-image: url(../Img/estadio.jpg);
+    $fotoestadio:"estadio";
     background-position: 200%;
     background-size: cover;
+}
+
+@if($fotoestadio=="estadio"){
+    background-image: $galeria;
 }
 
 .new_container .conteiner {
@@ -140,7 +149,7 @@ width: 30%;
     justify-content: space-around;
     width: $ancho;
     height: 450px;
-    background-image: url(../Img/estadio.jpg);
+    background-image: $galeria;
     background-position: 200%;
     background-size: cover
 }
@@ -205,10 +214,10 @@ width: 30%;
 
 @keyframes galeria{
     0%, 100% {
-      background-image: url(../Img/estadio.jpg);
+      background-image: $galeria;
     }
       50%{
-         background-image: url(../Img/cancha22.jpg);
+         background-image: $galeria1;
       }
     }   
 
@@ -345,10 +354,10 @@ opacity: .85;
 
 @keyframes galeria{
      0%, 100% {
-       background-image: url(../Img/estadio.jpg);
+       background-image: $galeria;
      }
        50%{
-          background-image: url(../Img/cancha22.jpg);
+          background-image: $galeria1;
        }
      }   
 
@@ -378,10 +387,14 @@ opacity: .85;
 }
 
 .tienda{
-    background-image: url(../Img/cancha22.jpg);
+    $fotoestadio:"estadio1";
+    background-image: $galeria1;
     background-position: 300%;
     background-size: cover;
     margin-bottom: 1%;
+}
+@if($fotoestadio=="estadio1"){
+    background-image: $galeria1;
 }
 
 .tienda .conteiner4 {
@@ -414,7 +427,7 @@ opacity: .85;
     column-gap: 40px;
     row-gap: 35px;
     border: 10px solid ;
-    background-image: url(../Img/cancha22.jpg);
+    background-image: $galeria1;
     background-position: 300%;
     background-size: cover;
     margin-bottom: 1%;
@@ -557,7 +570,7 @@ opacity: .85;
      }
 
      .socio_container{
-      background-image: url(../Img/cancha22.jpg);
+      background-image: $galeria1;
       background-position:100%;
       background-size: cover;
       margin-bottom: 1%;
@@ -604,7 +617,7 @@ opacity: .85;
     column-gap: 40px;
     row-gap: 35px;
     border: 10px solid ;
-    background-image: url(../Img/cancha22.jpg);
+    background-image: $galeria1;
     background-position: 300%;
     background-size: cover;
     margin-bottom: 1%;
