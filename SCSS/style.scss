@@ -269,6 +269,12 @@ opacity: .85;
     width: $ancho;
 }
 
+.socio_container a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    }
+
 .registro{
     display: $dflex;
     margin: 20%;
@@ -289,9 +295,6 @@ opacity: .85;
     background-color: rgb(0, 0, 0, 0.70);
     border: 10px solid rgb(0, 0, 0, 0.20);
 }
-
-
-
 
 
 /* Pagina 4 */
