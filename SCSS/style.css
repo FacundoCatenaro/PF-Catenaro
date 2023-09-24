@@ -451,6 +451,12 @@ label i {
   width: 30%;
 }
 
+.bottom3{
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+}
+
 /*Patrocinadores*/
 .patrocinador {
   display: grid;
