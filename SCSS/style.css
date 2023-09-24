@@ -12,8 +12,10 @@
 
 /*Navegador */
 .escudo {
-  width: 150px;
+  width: 130px;
   margin-left: 5%;
+  height: 180px;
+  margin-top: 1%;
 }
 
 .nav {
@@ -55,6 +57,21 @@ li a {
     list-style: none;
     color: white;
     }
+
+
+/*Estilo mobile */
+
+.navegacion label {
+      display: none;
+}
+
+.navegacion #check_menu {
+ display: none;
+}
+
+label i {
+ font-size: 2rem;
+}
 
 /*Pagina 1 */
 
@@ -253,8 +270,8 @@ li a {
 .registro {
   display: flex;
   margin: 20%;
-  margin-top: 15%;
-  height: 27%;
+  margin-top: 10%;
+  height: 45%;
   width: 60%;
   background-color: rgba(0, 0, 0, 0.7);
   border: 10px solid rgba(0, 0, 0, 0.2);
@@ -264,10 +281,29 @@ li a {
   color: rgb(255, 255, 255);
   margin: 10%;
   margin-top: 10%;
-  width: 60%;
+  width: 100%;
+  height: 50%;
   margin-right: 10%;
   background-color: rgba(0, 0, 0, 0.7);
   border: 10px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.form_2{
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 16px;
+  border: 1px solid black;
+}
+
+.form_3{
+  width: 103%;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  font-size: 15px;
 }
 
 /* Pagina 4 */
@@ -464,15 +500,27 @@ li a {
 
 /* Estilo Mobile */
 @media (max-width: 480px) {
+
   .logo__container {
     display: grid;
     grid-area: "escudo" "nombre";
     margin-left: 2%;
   }
-  .nav_container {
-    display: flex;
-    justify-content: space-around;
+
+/* Nav Mobile */
+
+ .nav_container {
+  display: block;
+  height: 100%;
+  justify-content: center;
+ }
+
+.logo__container {
+    display: grid;
+    grid-area: "escudo" "nombre";
+    margin-left: 2%;
   }
+
   .video_1 video {
     width: 100%;
     height: 100%;
@@ -482,7 +530,7 @@ li a {
     height: 250px;
   }
   .titulo {
-    margin-top: 20%;
+    margin-top: 5%;
   }
   .new_container {
     display: flex;
@@ -532,12 +580,35 @@ li a {
   }
   .socio_container .registro {
     background-color: black;
-    border: 10px solid black;
+    border: 9px solid black;
+    width: 70%;
+    margin-left: 70px;
+    margin-top: 60px;
   }
+  .form_2{
+    width: 97%;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 15px;
+  }
+  
+  .form_3{
+    width: 100%;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 15px;
+    margin-top: 3%;
+  }
+  
   .socio_container .pago {
     background-color: black;
     margin-left: 17%;
     border: 10px solid black;
+    width: 70%;
   }
   .socio_container {
     background-image: url(../Img/cancha22.jpg);

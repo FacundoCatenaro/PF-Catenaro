@@ -1,0 +1,49 @@
+.escudo {
+    width: 150px;
+    margin-left: 5%;
+}
+
+.nav{
+   background-color: white;
+   width: $ancho;
+   height: 70px;
+}
+
+.nav .logo__container img {
+   width: 1px; 
+   margin: auto;
+   background-color:black;
+}
+
+.nombre{
+    font-size: 40px;
+    margin-left: 1%;
+}
+
+
+.nav_container {
+    display: $dflex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    height: 35px; 
+}
+
+li{
+    list-style: none;
+}
+
+a:active {
+    font-weight: 800;
+}
+
+li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    }
+
+@if($navcolor=="color") {
+    color: white;
+}

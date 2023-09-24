@@ -1,0 +1,45 @@
+/*Sass */
+
+
+/*Variables */ 
+$ancho:100%;
+$alto:100%;
+$dflex:flex;
+$galeria:url(../Img/estadio.jpg);
+$galeria1:url(../Img/cancha22.jpg);
+
+/*Nav */ 
+
+@if($navcolor=="color") {
+    color: white;
+}
+
+/*Pagina 1 */ 
+@if($fotoestadio=="estadio"){
+    background-image: $galeria;
+}
+
+/*Pagina 2 */ 
+@keyframes galeria{
+    0%, 100% {
+      background-image: $galeria;
+    }
+      50%{
+         background-image: $galeria1;
+      }
+    }   
+
+/*Pagina 3 */ 
+ @keyframes galeria{
+        0%, 100% {
+          background-image: $galeria;
+        }
+          50%{
+             background-image: $galeria1;
+          }
+        }   
+
+/*Pagina 4 */   
+@if($fotoestadio=="estadio1"){
+            background-image: $galeria1;
+        }
