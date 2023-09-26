@@ -9,42 +9,46 @@
     <meta name="keywords" content="deporte, club deportivo, futbol, basquet, voley, boxeo, tenis, patin artistico">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Custom Style -->
     <link rel="stylesheet" href="../SCSS/style.css">
         <title>Del Plata - Sitio Oficial</title>
         <link rel="shortcut icon" href="../Img/CDP.ico" type="image/x-icon">
    </head>
+   <!-- Fin del head -->
     <body>
         <header>
       <!-- Navegacion -->
       <header>
-        <nav>
-          <div class="logo__container">
-             <img src="../Img/CDP.ico" class="escudo" alt="Escudo oficial de Del Plata">
-             <span class="nombre">Club Deportivo Del Plata</span>
-          </div>
-          <div>
-            <ul class="nav_container">
-              <li>
-                <a href="../index.html">INICIO</a>
+        <div class="logo__container">
+          <img class="escudo" src="../Img/CDP.ico" alt="Escudo oficial de Del Plata">
+          <span class="nombre">Club Deportivo Del Plata</span>
+       </div>
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">INICIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../HTML/Institucion.html">INSTITUCIÓN</a>
               </li>
-               <li>
-                 <a href="../HTML/Institucion.html">INSTITUCIÓN</a>
-               </li>
-               <li>
-                 <a href="../HTML/socios.html">SOCIOS</a>
-               </li>
-               <li>
-                 <a href="../HTML/polideportivo.html">POLIDEPORTIVO</a>
-               </li>
-               <li>
-                 <a href="../HTML/tiendaonline.html">TIENDA ONLINE</a>
-               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../HTML/socios.html">SOCIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../HTML/polideportivo.html">POLIDEPORTIVO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../HTML/tiendaonline.html">TIENDA ONLINE</a>
+              </li>
             </ul>
           </div>
-          </nav>
-          </div>
-           <!-- Fin de navegacion -->
+        </div>
+      </nav>
+        </header>
             <!-- Sección socios -->
           <div class="portada_container">
             <img src="../Img/Deportistas.jpg" alt="portada de la seccion socios">
@@ -79,18 +83,17 @@
            <div>
             <article class="pago">
              <h2>FORMAS DE PAGO</h2>
-             ------------------------------------------------------------------------------------------------------------------------------------------------------
+             ------------------------------------------------------------------------------------------------------------------------
              <h4>PAGO ONLINE DE CUOTA:</h4>
              <p>Ingresando a tu usuario de Del Plata ID vas a poder pagar tu cuota de manera online con cualquier tarjeta.</p>
-             ------------------------------------------------------------------------------------------------------------------------------------------------------
+             ------------------------------------------------------------------------------------------------------------------------
              <h4>CON DEBITO AUTOMATICO:</h4>
              <p>Dentro de Del Plata ID vas a poder elegir adherirte a debito automatico con tu tarjeta</p>
-             ------------------------------------------------------------------------------------------------------------------------------------------------------
+             ------------------------------------------------------------------------------------------------------------------------
              <h4>RAPIPAGO:</h4>
              <p>Sumamos la opción de pago con Rapipago dentro de Del Plata ID.
               Vas a poder pagar tu cuota a través de RapiPago de manera online o acercándote a cualquier sucursal con tu documento de identidad</p>
-              ------------------------------------------------------------------------------------------------------------------------------------------------------
-            </article>
+              ----------------------------------------------------------------------------------------------------------------------
           </div>
           </section>
         </section>
@@ -118,5 +121,7 @@
        </footer>
        <!-- Bootstrap js -->
        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -9,43 +9,46 @@
     <meta name="keywords" content="deporte, club deportivo, futbol, basquet, voley, boxeo, tenis, patin artistico">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Custom Style -->
     <link rel="stylesheet" href="../SCSS/style.css">
         <title>Del Plata - Sitio Oficial</title>
         <link rel="shortcut icon" href="../Img/CDP.ico" type="image/x-icon">
     </head>
+    <!-- Fin del head -->
     <body>
         <header>
-      <!-- Navegacion -->
-      <header>
-        <nav>
-          <div class="logo__container">
-             <img src="../Img/CDP.ico" class="escudo" alt="Escudo oficial de Del Plata">
-             <span class="nombre">Club Deportivo Del Plata</span>
-          </div>
-          <div>
-            <ul class="nav_container">
-              <li>
-                <a href="../index.html">INICIO</a>
-              </li>
-               <li>
-                 <a href="../HTML/Institucion.html">INSTITUCIÓN</a>
-               </li>
-               <li>
-                 <a href="../HTML/socios.html">SOCIOS</a>
-               </li>
-               <li>
-                 <a href="../HTML/polideportivo.html">POLIDEPORTIVO</a>
-               </li>
-               <li>
-                 <a href="../HTML/tiendaonline.html">TIENDA ONLINE</a>
-               </li>
-            </ul>
-          </div>
-        </nav>
-        <!-- Fin de navegacion -->
-          </div>
-        </header>
+     <!-- Navegacion -->
+     <header>
+      <div class="logo__container">
+        <img class="escudo" src="../Img/CDP.ico" alt="Escudo oficial de Del Plata">
+        <span class="nombre">Club Deportivo Del Plata</span>
+     </div>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">INICIO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="../HTML/Institucion.html">INSTITUCIÓN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/socios.html">SOCIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/polideportivo.html">POLIDEPORTIVO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/tiendaonline.html">TIENDA ONLINE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      </header>
         <div class="titulo5">
           <h2>DISCIPLINAS DEL CLUB</h2>
         </div>
@@ -54,26 +57,32 @@
         <div class="container3">
           <img src="../Img/futbool.jpg" alt="Imagen sobre la disciplina futbol">
           <h3>Fútbol</h3>
+          <h6>Lunes y miercoles a las 18hs con Lucas Peralta</h6>
         </div>
         <div class="container3">
           <img src="../Img/pelota-golpeando-red.jpg" alt="Imagen sobre la disciplina voley">
           <h3>Voley</h3>
+          <h6>Martes y jueves a las 18hs con Gianluca Landa</h6>
         </div>
         <div class="container3">
           <img src="../Img/Basquet 2.jpg" alt="Imagen sobre la disciplina basquet">
           <h3>Básquet</h3>
+          <h6>Lunes y miercoles a las 16hs con Mauro Altamirano</h6>
         </div>
         <div class="container3">
           <img src="../Img/patin.jpg" alt="Imagen sobre la disciplina patin artistico">
           <h3>Patín Artístico</h3>
+          <h6>Martes y jueves a las 16hs con Laura Machi</h6>
         </div>
         <div class="container3">
           <img src="../Img/boxeo.jpg" alt="Imagen sobre la disciplina boxeo">
           <h3>Boxeo</h3>
+          <h6>Viernes y sábados a las 16hs con Sebastián Gomez</h6>
         </div>
         <div class="container3">
           <img src="../Img/natacion.jpg" alt="Imagen sobre la disciplina natacion">
           <h3>Natación</h3>
+          <h6>Viernes y sábados a las 18hs con Sofia Diaz</h6>
         </div>
       </section>
       <!-- Fin de Polideportivo -->
@@ -100,5 +109,7 @@
      </footer>
      <!-- Bootstrap js -->
      <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     </body>
 </html>
