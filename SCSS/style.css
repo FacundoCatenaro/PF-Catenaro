@@ -1,13 +1,13 @@
 /* reset */
 
-@font-face {
-  font-family: "PTSerif-Bold.ttf";
-  src: url(../Fonts/PTSerif-Bold.ttf);
-}
-
 * {
   margin: 0;
   padding: 0%;
+}
+
+@font-face {
+  font-family: "PTSerif'Italic.ttf";
+  src: url(../Fonts/PTSerif-Italic.ttf);
 }
 
 /*Navegador */
@@ -501,6 +501,7 @@ transform: scale(1.03);
     grid-area: "escudo" "nombre";
     margin-left: 2%;
   }
+
 
 /* Nav Mobile */
 
