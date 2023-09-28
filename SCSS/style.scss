@@ -2,6 +2,12 @@
 
 /* reset */ 
 
+
+@import url(_footer.scss);
+@import url(_header.scss);
+@import url(_main.scss);
+
+
 @font-face {
     font-family:"PTSerif-Bold.ttf" ;
     src: url(../Fonts/PTSerif-Bold.ttf);
@@ -11,10 +17,6 @@
   margin:0;
   padding: 0%;
 }
-
-@import url(_footer.scss);
-@import url(_header.scss);
-@import url(_main.scss);
 
 
 /*Navegador */
@@ -27,7 +29,7 @@
 
 .nav{
    background-color: white;
-   width: $ancho;
+   width: 100%;
    height: 70px;
 }
 
@@ -44,7 +46,7 @@
 
 
 .nav_container {
-    display: $dflex;
+    display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
@@ -60,32 +62,26 @@ a:active {
     font-weight: 800;
 }
 
-li a {
+.nav_color {
+    color: white;
     text-decoration: none;
-    list-style: none;
-    color: white;
-    }
-
-@if($navcolor=="color") {
-    color: white;
 }
 
 
 /*Pagina 1 */ 
 
-
 .video_1 video{
-    display: $dflex;
+    display: flex;
     justify-content: center;
     background-color: rgb(0, 0, 0);
     margin: auto;
     margin-top: 1%;
-    width: $ancho;
-    height: $alto;
+    width: 100%;
+    height: 100%;
 }
 
 .titulo{
-    display: $dflex;
+    display: flex;
     margin: 20px;
     height: 40px;
     color: white;
@@ -94,23 +90,19 @@ li a {
 }
 
 .new_container {
-    display: $dflex;
+    display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
     border-radius: 1px;
     background: rgb(255, 255, 255);
-    width: $ancho;
+    width: 100%;
     height: 500px;
 }
 
 .new_container{
-    $fotoestadio:"estadio";
+    background-image: url(../Img/estadio.jpg);
     background-position: 200%;
     background-size: cover;
-}
-
-@if($fotoestadio=="estadio"){
-    background-image: $galeria;
 }
 
 .new_container .conteiner {
@@ -125,7 +117,7 @@ width: 30%;
 }   
 
 .new_container .conteiner img {
-    width: $ancho;
+    width: 100%;
     opacity: .85;
 }
 
@@ -135,7 +127,7 @@ width: 30%;
 
 
 .titulo1{
-    display: $dflex;
+    display: flex;
     justify-content: center;
     height: 40px;
     margin: 20px;
@@ -145,13 +137,13 @@ width: 30%;
 }
 
 .new_container1 {
-    display: $dflex;
+    display: flex;
     border-radius: 1px;
     flex-flow: row wrap;
     justify-content: space-around;
-    width: $ancho;
+    width: 100%;
     height: 450px;
-    background-image: $galeria;
+    background-image: url(../Img/estadio.jpg);
     background-position: 200%;
     background-size: cover
 }
@@ -161,7 +153,7 @@ width: 30%;
     background-color: rgb(207, 207, 207);
     color: rgb(0, 0, 0);
     width: 30%;
-    height: $alto;
+    height: 100%;
     }
 
 .conteiner1:hover {
@@ -169,7 +161,7 @@ width: 30%;
 }   
 
     .new_container1 .conteiner1 img {
-        width: $ancho;
+        width: 100%;
         opacity: .85;
     }
 
@@ -178,7 +170,7 @@ width: 30%;
     }
 
 .titulo2{
-    display: $dflex;
+    display: flex;
     justify-content: center;
     height: 40px;
     margin: 20px;
@@ -190,8 +182,9 @@ width: 30%;
 
 /* Pagina 2 */
 
+
 .titulo4{
-    display: $dflex;
+    display: flex;
     justify-content: center;
     height: 30px;
     margin: 20px;
@@ -216,10 +209,10 @@ width: 30%;
 
 @keyframes galeria{
     0%, 100% {
-      background-image: $galeria;
+      background-image: url(../Img/estadio.jpg);
     }
       50%{
-         background-image: $galeria1;
+         background-image: url(../Img/cancha22.jpg);
       }
     }   
 
@@ -238,7 +231,7 @@ width: 30%;
 
 
 .hist_container .container2 img{
-width: $ancho;
+width: 100%;
 opacity: .85;
 }
 
@@ -251,7 +244,7 @@ opacity: .85;
 /* Pagina 3 */
 
 .titulo6{
-    display: $dflex;
+    display: flex;
     justify-content: center;
     height: 30px;
     margin: 20px;
@@ -269,17 +262,11 @@ opacity: .85;
     background-image: url(../Img/sociossssss.jfif);
     background-position: 100%;
     background-size:cover;
-    width: $ancho;
+    width: 100%;
 }
 
-.socio_container a {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    }
-
 .registro{
-    display: $dflex;
+    display: flex;
     margin: 20%;
     margin-top: 15%; 
     height: 27%;
@@ -300,10 +287,13 @@ opacity: .85;
 }
 
 
+
+
+
 /* Pagina 4 */
 
 .titulo5{
-    display: $dflex;
+    display: flex;
     justify-content: center;
     height: 30px;
     margin: 20px;
@@ -340,7 +330,7 @@ opacity: .85;
 
 
 .poli_container .container3 img{
-    width: $ancho;
+    width: 100%;
     height: 90%;
     opacity: .85;
 }
@@ -351,18 +341,18 @@ opacity: .85;
 
 
 .portada_container img{
-     display: $dflex;
+     display: flex;
      justify-content: center;
-     width: $ancho;
+     width: 100%;
      height: 500px;
     }
 
 @keyframes galeria{
      0%, 100% {
-       background-image: $galeria;
+       background-image: url(../Img/estadio.jpg);
      }
        50%{
-          background-image: $galeria1;
+          background-image: url(../Img/cancha22.jpg);
        }
      }   
 
@@ -370,7 +360,7 @@ opacity: .85;
 /* Pagina 5 */
 
 .titulo7{
-    display: $dflex;
+    display: flex;
     justify-content: center;
     height: 30px;
     margin: 20px;
@@ -379,7 +369,7 @@ opacity: .85;
 }
 
 .portada2_container{
-    display: $dflex;
+    display: flex;
     justify-content: center;
     width: 100%;
     background: black;
@@ -392,14 +382,10 @@ opacity: .85;
 }
 
 .tienda{
-    $fotoestadio:"estadio1";
-    background-image: $galeria1;
+    background-image: url(../Img/cancha22.jpg);
     background-position: 300%;
     background-size: cover;
     margin-bottom: 1%;
-}
-@if($fotoestadio=="estadio1"){
-    background-image: $galeria1;
 }
 
 .tienda .conteiner4 {
@@ -432,7 +418,7 @@ opacity: .85;
     column-gap: 40px;
     row-gap: 35px;
     border: 10px solid ;
-    background-image: $galeria1;
+    background-image: url(../Img/cancha22.jpg);
     background-position: 300%;
     background-size: cover;
     margin-bottom: 1%;
@@ -441,7 +427,7 @@ opacity: .85;
 
 
 .patrocinador .patro{
-    display: $dflex;
+    display: flex;
     justify-content: center;
     border: 10px solid;
     background-color:white;
@@ -458,6 +444,7 @@ opacity: .85;
     width: 60%;
     height: auto;
 }
+
 
 
 /*Footer*/
@@ -490,8 +477,8 @@ opacity: .85;
 
 
     .video_1 video {
-        width: $ancho;
-        height: $alto;
+        width: 100%;
+        height: 130%;
          background-color: black;
     }
 
@@ -504,11 +491,11 @@ opacity: .85;
         margin-top: 20%;
      }
      .new_container{
-        display: $dflex;
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-        width: $ancho;
+        width: 100%;
      }
 
      .new_container .conteiner{
@@ -520,11 +507,11 @@ opacity: .85;
      
 
      .new_container1{
-        display: $dflex;
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-        width: $ancho;
+        width: 100%;
      }
 
      .new_container1 .conteiner1{
@@ -536,11 +523,11 @@ opacity: .85;
 
 
      .hist_container{
-        display: $dflex;
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-        width: $ancho;
+        width: 100%;
      }
 
      .hist_container .container2{
@@ -548,7 +535,7 @@ opacity: .85;
      }
      
     .hist_container .container2 img{
-        width: $ancho;
+        width: 100%;
     }
     
     .portada_container img{
@@ -557,7 +544,7 @@ opacity: .85;
 
 
      .socio_container{
-        display: $dflex;
+        display: flex;
         flex-direction: column;       
      }
 
@@ -574,7 +561,7 @@ opacity: .85;
      }
 
      .socio_container{
-      background-image: $galeria1;
+      background-image: url(../Img/cancha22.jpg);
       background-position:100%;
       background-size: cover;
       margin-bottom: 1%;
@@ -582,11 +569,11 @@ opacity: .85;
      }
    
     .poli_container{
-        display: $dflex;
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-        width: $ancho;
+        width: 100%;
     }
     
      .container3{
@@ -594,16 +581,16 @@ opacity: .85;
      }
 
      .tienda{
-        display: $dflex;
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-        width: $ancho;
+        width: 100%;
      }
 
     
     .portada2_container img{
-       width: $ancho;
+       width: 100%;
     }
      .conteiner4{
         margin-bottom: 3%;
@@ -611,7 +598,7 @@ opacity: .85;
 
 
 .patrocinador{
-    display: $dflex;
+    display: flex;
     flex-direction: column;
     background-color:white;
     flex-wrap: wrap;
@@ -621,7 +608,7 @@ opacity: .85;
     column-gap: 40px;
     row-gap: 35px;
     border: 10px solid ;
-    background-image: $galeria1;
+    background-image: url(../Img/cancha22.jpg);
     background-position: 300%;
     background-size: cover;
     margin-bottom: 1%;
@@ -630,7 +617,7 @@ opacity: .85;
 
 
 .patrocinador .patro{
-    display: $dflex;
+    display: flex;
     justify-content: center;
     border: 10px solid;
     background-color:white;
@@ -646,8 +633,9 @@ opacity: .85;
     height: auto;
 }
 
+
  .footer{
-        width: $ancho;
+        width: 100%;
     }
 }
 /*Cierre estilo Mobile */
